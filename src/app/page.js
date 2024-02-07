@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import styles from "../../styles/page.module.css";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter, FaGithub  } from "react-icons/fa6";
 
 export default function Home() {
   const [animationStarted, setAnimationStarted] = useState(false);
@@ -111,11 +113,51 @@ useEffect(() => {
               </div>
               
             </div>
-
-            {/* <div id={styles.aboutsec2}>
-            </div> */}
           </div>
         </div>
+
+        <div className={styles.homework}>
+          <div className={styles.worksec}>
+            <div className={styles.workhead}>
+              <h2 id={styles.workheading}>/ WORK /</h2>
+            </div>
+
+            <div className={styles.worklists}>
+              <div className={styles.work1}></div>
+
+              <div className={styles.work2}></div>
+
+              <div className={styles.work3}></div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.homesocials}>
+          <div className={styles.socialssec}>
+            
+            <div className={styles.socialcontainer}>
+              <div className={styles.socialmodels}>
+                <FaLinkedinIn className={styles.socialicons}/>
+              </div>
+              <h5>LinkedIn</h5>
+            </div>
+
+            <div className={styles.socialcontainer}>
+              <div className={styles.socialmodels}>
+                <FaGithub className={styles.socialicons}/>
+              </div>
+              <h5>GitHub</h5>
+            </div>
+
+            <div className={styles.socialcontainer}>
+              <div className={styles.socialmodels}>
+                <FaXTwitter className={styles.socialicons}/>
+              </div>
+              <h5>Twitter 'X'</h5>
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
   );

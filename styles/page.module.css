@@ -122,3 +122,175 @@
   background-position: 10%;
   border-radius: 0.9em;
 }
+
+.homework {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.worksec {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.workhead {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.workhead h2 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.7em;
+  padding: 0.5em 1em;
+  display: inline;
+  margin: 0;
+}
+
+.worklists {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+}
+
+.work1 {
+  background-image: url('../public/uiuxwork.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vh;
+  height: 60vh;
+  border-radius: 1em;
+  transition: all 600ms;
+}
+
+.work1:hover {
+  width: 50vh;
+  height: 70vh;
+  transform: perspective(2000px) rotateX(40deg) rotateY(30deg) rotateZ(-30deg);
+  box-shadow: -15px 20px 30px #ececec;
+  border: 3px rgb(244, 245, 235) solid;
+  border-radius: 1em;
+  margin: 0;
+}
+
+.work1:hover .worklists {
+  padding: 0em;
+}
+
+.work1:hover .workhead h2 {
+  margin: -9em;
+}
+
+.work2 {
+  background-image: url('../public/mapwork.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vh;
+  height: 60vh;
+  border-radius: 1em;
+  transition: all 600ms;
+}
+
+.work2:hover {
+  width: 50vh;
+  height: 70vh;
+  transform: perspective(2000px) rotateX(40deg);
+  box-shadow: 0px 20px 30px wheat;
+  border: 3px rgb(250, 242, 226) solid;
+  border-radius: 1em;
+}
+
+.work3 {
+  background-image: url('../public/chatappwork.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vh;
+  height: 60vh;
+  border-radius: 1em;
+  transition: all 600ms;
+}
+
+.work3:hover {
+  width: 50vh;
+  height: 70vh;
+  transform: perspective(2000px) rotateX(40deg) rotateY(-30deg) rotateZ(30deg);
+  box-shadow: 15px 20px 30px rgb(11, 122, 61);
+  border: 3px rgb(0, 255, 13) solid;
+  border-radius: 1em;
+}
+
+.homesocials {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialssec {
+  width: 80%;
+  height: 45%;
+  border: 10px solid white;
+  border-radius: 2em;
+  background-position: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialcontainer h5 {
+  color: #ececec;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.socialmodels {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialicons {
+  color: #ececec;
+  font-size: 2.1em;
+  transition: all 500ms;
+}
+
+.socialmodels:hover {
+  transform: perspective(2000px) rotateX(40deg);
+}
+
+.socialmodels:hover .socialicons {
+  transform: translateY(-20px) scale(1.3);
+}
