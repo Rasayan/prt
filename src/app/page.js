@@ -136,21 +136,21 @@ useEffect(() => {
           <div className={styles.socialssec}>
             
             <div className={styles.socialcontainer}>
-              <div className={styles.socialmodels}>
+              <div className={styles.socialmodels} id={styles.soc1}>
                 <FaLinkedinIn className={styles.socialicons}/>
               </div>
               <h5>LinkedIn</h5>
             </div>
 
             <div className={styles.socialcontainer}>
-              <div className={styles.socialmodels}>
+              <div className={styles.socialmodels} id={styles.soc2}>
                 <FaGithub className={styles.socialicons}/>
               </div>
               <h5>GitHub</h5>
             </div>
 
             <div className={styles.socialcontainer}>
-              <div className={styles.socialmodels}>
+              <div className={styles.socialmodels} id={styles.soc3}>
                 <FaXTwitter className={styles.socialicons}/>
               </div>
               <h5>Twitter 'X'</h5>
