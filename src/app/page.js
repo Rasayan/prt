@@ -6,77 +6,33 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter, FaGithub  } from "react-icons/fa6";
 
 export default function Home() {
-  const [animationStarted, setAnimationStarted] = useState(false);
-
-useEffect(() => {
-  if (!animationStarted) {
-    const texts = ["RASAYAN", "РАСАЯН"];
-    let animationRunning = false; // Flag to track if animation is already running
-
-    function typeWriter(text, i, speed, element, n) {
-      if (i <= n-1) {
-        element.innerText += text.charAt(0);
-        setTimeout(() => typeWriter(text.substring(1), i + 1, speed, element, n), speed);
-      } else {
-        animationRunning = false;
-      }
-    }
-
-    // Function to loop through the texts array
-    function startTypingAnimation() {
-      let index = 0;
-
-      function loop(currentText) {
-        // Check if animation is already running
-        if (!animationRunning) {
-          animationRunning = true; 
-          document.getElementById("typingText").innerText = "";
-          // Start typing animation for the current text
-          typeWriter(
-            currentText,
-            0,
-            200,
-            document.getElementById("typingText"),
-            currentText.length
-          );
-          // Increment index for next text
-          index++;
-        }
-        // Call loop recursively after a timeout
-        setTimeout(
-          () => {
-            loop(texts[index % texts.length]);
-            animationRunning = false; // Reset animationRunning flag after each loop iteration
-          },
-          currentText.length * 100 + 2000
-        );
-      }
-
-      // Start the loop with the first text
-      loop(texts[index % texts.length]);
-    }
-
-    startTypingAnimation();
-    setAnimationStarted(true);
-  }
-
-  // Clean up function
-  return () => {};
-}, []);
-
-
-
   return (
     <main className={styles.main}>
       <div className={styles.homediv}>
         <div className={styles.homeh1name}>
-          <h1 id="typingText"></h1>
+          <h1 id="typingTextEng">R A S A Y A N</h1>
+          <h1 id="typingTextRus">Р А С А Я Н</h1>
+
+          <div className={styles.homenamedetails}>
+            <div>
+              <h3>RASAYAN CHAKRABORTY</h3>
+
+              <h3>2024</h3>
+            </div>
+
+            <div>
+              <h3>Расаян Чакраборти</h3>
+
+              <h3>Programmer/Designer</h3>
+            </div>
+            
+          </div>
         </div>
 
-        <div className={styles.homeabout}>
+        <div className={styles.homeabout} id="about">
           <div className={styles.aboutsec}>
             <div id={styles.aboutsec1}>
-              <h2>/ ABOUT ME /</h2>
+              <h2>ABOUT ME</h2>
 
               <div className={styles.sec1categories}>
                 <div className={styles.categ}>
@@ -116,10 +72,10 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className={styles.homework}>
+        <div className={styles.homework} id="work">
           <div className={styles.worksec}>
             <div className={styles.workhead}>
-              <h2 id={styles.workheading}>/ WORK /</h2>
+              <h2 id={styles.workheading}>WORK</h2>
             </div>
 
             <div className={styles.worklists}>
@@ -132,26 +88,32 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className={styles.homesocials}>
+        <div className={styles.homesocials} id="connect">
           <div className={styles.socialssec}>
             
             <div className={styles.socialcontainer}>
               <div className={styles.socialmodels} id={styles.soc1}>
-                <FaLinkedinIn className={styles.socialicons}/>
+                <a href="https://www.linkedin.com/in/rasayan-chakraborty-48864b249/">
+                  <FaLinkedinIn className={styles.socialicons}/>
+                </a>
               </div>
               <h5>LinkedIn</h5>
             </div>
 
             <div className={styles.socialcontainer}>
               <div className={styles.socialmodels} id={styles.soc2}>
-                <FaGithub className={styles.socialicons}/>
+                <a href="https://github.com/Rasayan">
+                  <FaGithub className={styles.socialicons}/>
+                </a>
               </div>
               <h5>GitHub</h5>
             </div>
 
             <div className={styles.socialcontainer}>
               <div className={styles.socialmodels} id={styles.soc3}>
-                <FaXTwitter className={styles.socialicons}/>
+                <a href="https://github.com/Rasayan">
+                  <FaXTwitter className={styles.socialicons}/>
+                </a>
               </div>
               <h5>Twitter 'X'</h5>
             </div>

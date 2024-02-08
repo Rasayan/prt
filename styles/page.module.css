@@ -19,15 +19,49 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.homeh1name h1 {
-  font-size: 10em;
-  letter-spacing: 0.3em;
+.homenamedetails {
+  width: 68%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ececec;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.homenamedetails div {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homenamedetails div h3 {
+  margin: 0;
+}
+
+.homeh1name h1:first-child {
+  font-size: 14em;
+  /* letter-spacing: 0.3em; */
   margin: 0;
   color: aliceblue;
+  font-family: 'Protest Guerrilla', sans-serif;
+}
+
+.homeh1name h1:nth-child(2){
+  font-size: 14em;
+  /* letter-spacing: 0.3em; */
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
 }
 
 .homeabout {
@@ -67,6 +101,7 @@
 #aboutsec1 h2 {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+  font-family: 'Protest Guerrilla', sans-serif;
   border-radius: 0.7em;
   padding: 0.5em 1em;
 }
@@ -100,11 +135,13 @@
   margin: 0 1em;
   display: inline;
   color: rgb(220, 223, 236);
-  background-image: linear-gradient(45deg, rgb(0, 44, 165), rgb(70, 0, 136));
+  background-image: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
   padding: 0.1em 0.4em;
   border: none;
   outline: none;
-  border-radius: 1em;
+  border-radius: 0.2em;
 }
 
 .categ p {
@@ -150,8 +187,11 @@
 }
 
 .workhead h2 {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  border: 3px white solid;
+  /* background-color: rgb(255, 255, 255); */
+  font-size: 1.8em;
+  font-family: 'Protest Guerrilla', sans-serif;
   border-radius: 0.7em;
   padding: 0.5em 1em;
   display: inline;
