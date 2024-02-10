@@ -38,25 +38,15 @@ export default function Home() {
                 <div className={styles.categ}>
                   <h4>Full-Stack Web3.O Developer</h4>
 
-                  <p>I am a full-stack developer, based on the M.E.R.N stack.
-                    You can find my projects on my GitHub. Some notable projects 
-                    includes
-                    <ul>
-                      <li>Real-Time chat application</li>
-                      <li>Real-Time chat application</li>
-                    </ul>
+                  <p>Rich experience in Full-Stack MERN Development using NextJS. You can see my projects on my GitHub
                   </p>
                 </div>
 
                 <div className={styles.categ}>
                   <h4>Security Enthusiast</h4>
 
-                  <p>Enthusiastic in Cybersecurity, and especiallay in Blockchain
-                     Security.
-                    <ul>
-                      <li>Real-Time chat application</li>
-                      <li>Real-Time chat application</li>
-                    </ul>
+                  <p>I am a cybersec enthusiast, spending time on learning about the internet
+                    and finding bugs on compnay websites.
                   </p>
                 </div>
 

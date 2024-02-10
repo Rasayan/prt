@@ -136,7 +136,8 @@
   display: inline;
   color: rgb(220, 223, 236);
   background-image: linear-gradient(45deg, rgb(32, 32, 32), rgb(0, 0, 0));
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Protest Guerrilla', sans-serif;
   letter-spacing: 1px;
   padding: 0.1em 0.4em;
   border: none;
@@ -145,6 +146,7 @@
 }
 
 .categ p {
+  font-family: 'Poppins', sans-serif;
   margin-left: 0.4em;
   font-weight: 600;
   color: #fff;
@@ -184,6 +186,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
+  z-index: 10;
 }
 
 .workhead h2 {
@@ -206,6 +209,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 3em 0;
+  z-index: 8;
 }
 
 .work1 {
@@ -285,11 +289,8 @@
 .socialssec {
   width: 80%;
   height: 45%;
-  border: double 0.5em transparent;
-  background-image: linear-gradient(#000000, #000000), 
-                    linear-gradient(to right, #8F00FF, #00A3FF);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  border: solid 0.3em rgb(151, 121, 190);
+  background-image: linear-gradient(to right, #8F00FF98, #00A3FF18);
   border-radius: 2em;
   background-position: 10%;
   display: flex;
@@ -306,7 +307,8 @@
 
 .socialcontainer h5 {
   color: #ececec;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
@@ -341,7 +343,7 @@
 
 #soc1:hover {
   border: double 0.5em transparent;
-  background-image: linear-gradient(#000000, #000000), 
+  background-image: linear-gradient(#000000, #00000000), 
                     linear-gradient(to right, #0059ff, #00A3FF);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -349,7 +351,7 @@
 
 #soc2:hover {
   border: double 0.5em transparent;
-  background-image: linear-gradient(#000000, #000000), 
+  background-image: linear-gradient(#000000, #00000000), 
                     linear-gradient(to right, #2c7c06, #bbbe0a);
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -357,8 +359,88 @@
 
 #soc3:hover {
   border: double 0.5em transparent;
-  background-image: linear-gradient(#000000, #000000), 
+  background-image: linear-gradient(#000000, #00000000), 
                     linear-gradient(to right, #26a8ff, #3f3f3d);
   background-origin: border-box;
   background-clip: content-box, border-box;
+}
+
+@media screen and (max-width: 420px) {
+  .homeh1name h1:first-child {
+    font-size: 4em;
+  }
+
+  .homeh1name h1:nth-child(2) {
+    font-size: 4em;
+  }
+
+  .homenamedetails {
+    width: 90%;
+    font-size: 0.6em;
+    letter-spacing: 0.8px;
+  }
+
+  #aboutsec1 {
+    width: 100%;
+  }
+
+  .sec1categories {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  
+  .categ {
+    border: solid 0.1em rgb(151, 121, 190);
+    background-image: linear-gradient(to right, #8F00FF98, #00A3FF18);
+    border-radius: 10px;
+    width: 99%;
+  }
+
+  .aboutsec {
+    width: 100%;
+    height: 70vh;
+    /* border: 4px solid white; */
+    border-radius: 1em;
+    background-color: #000000;
+    background-image: none;
+    /* box-shadow: 15px 15px #a8a4a4; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+  }
+  
+  .socialssec {
+    width: 90%;
+    height: fit-content;
+    padding: 1.5em 0;
+    border-radius: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socialmodels {
+    width: 5em;
+    height: 5em;
+  }
+
+  .worklists {
+    width: 98%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    z-index: 8;
+  }
+  
+  .work1 {
+    background-image: url('../public/uiuxwork.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vh;
+    height: 60vh;
+    border-radius: 1em;
+    transition: all 600ms;
+  }
 }

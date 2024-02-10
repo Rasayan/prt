@@ -48,7 +48,7 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${isSearchActive ? styles['search-active'] : ''}`}>
       <div className={styles['navbar-container']}>
         <div className={styles['navbar-left']}>
-          <span className={styles['navbar-heading']}>rasayan</span>
+          <span className={styles['navbar-heading']}>rasayan_</span>
         </div>
         
         <div className={styles['navbar-right']}>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link href="#work" scroll={true}>Work</Link>
             <Link href="#connect" scroll={true}>Connect</Link>
           </div>
-          <FaGithub className={styles['github-icon']} />
+          <a href='https://github.com/Rasayan/prt'><FaGithub className={styles['github-icon']} /></a>
         </div>
       </div>
     </nav>

@@ -92,3 +92,24 @@
       margin: 5px 0;
     }
   } 
+
+  @media screen and (max-width: 420px) {
+    .navbar {
+      width: 95%;
+      padding: 0 1em;
+    }
+    .navbar-container {
+      padding: 9px 0;
+      flex-direction: row;
+    }  
+
+    .navbar-heading {
+      font-size: 1.1em;
+    }
+
+    .navbar-left,
+    .navbar-center,
+    .navbar-right {
+      margin: 10px 0;
+    }
+  }
