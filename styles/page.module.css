@@ -168,6 +168,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .worksec {
@@ -186,13 +187,12 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  z-index: 10;
+  z-index: 5;
 }
 
 .workhead h2 {
   color: rgb(255, 255, 255);
   border: 3px white solid;
-  /* background-color: rgb(255, 255, 255); */
   font-size: 1.8em;
   font-family: 'Protest Guerrilla', sans-serif;
   border-radius: 0.7em;
@@ -209,7 +209,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 3em 0;
-  z-index: 8;
+  z-index: 5;
 }
 
 .work1 {
@@ -284,6 +284,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .socialssec {
@@ -435,12 +436,35 @@
   }
   
   .work1 {
-    background-image: url('../public/uiuxwork.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 40vh;
-    height: 60vh;
-    border-radius: 1em;
-    transition: all 600ms;
+    border: solid 0.2em rgb(151, 121, 190);
+    width: 38vh;
+    transition: none;
+  }
+
+  .work2 {
+    border: solid 0.2em rgb(151, 121, 190);
+    width: 38vh;
+    transition: none;
+  }
+
+  .work3 {
+    border: solid 0.2em rgb(151, 121, 190);
+    width: 38vh;
+    transition: none;
+  }
+
+  .homework {
+    height: 200vh;
+    margin: 3em 0
+  }
+
+  .worklists {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
   }
 }

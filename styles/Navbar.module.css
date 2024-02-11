@@ -112,4 +112,8 @@
     .navbar-right {
       margin: 10px 0;
     }
+
+    .navbar-center {
+      display: none;
+    }
   }

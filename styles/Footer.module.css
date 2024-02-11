@@ -31,3 +31,21 @@
       flex-direction: column;
     }
   }
+
+  @media screen and (max-width: 420px) {
+
+    .footer {
+      z-index: 100;
+    }
+    .footerContent {
+      flex-direction: row;
+    }
+
+    .copyright {
+      font-size: 0.7em;
+    }
+    
+    .ownership {
+      font-size: 0.7em;
+    }
+  }
